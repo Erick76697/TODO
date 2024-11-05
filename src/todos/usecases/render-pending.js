@@ -1,6 +1,6 @@
 import todoStore, { Filters } from "../../store/todo.store"
 
-let element
+let element;
 
 /**
  * 
@@ -12,6 +12,7 @@ export const renderPending = (elementId) =>{
     if(!element)
         throw new Error (`Element ${elementId} not found`)
     
-    element.inneHTML = todoStore.getTodos(Filters.Pending).length;
+    element.innerHTML = todoStore.getTodos(Filters.Pending).length;
+
 
 }

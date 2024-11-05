@@ -1,5 +1,5 @@
 import todoStore, {Filters} from '../store/todo.store';
-import html from './app.html?raw'
+import html from './app.html?raw';
 import { renderTodos, renderPending } from './usecases';
 
 
@@ -25,6 +25,7 @@ export const App = (elementId) =>{
     const updatePendingCount  = () =>{
         renderPending(elementIds.pendingCountLabel);
     }
+    
     //cuando la funcion app() se llama
     (()=>{
         const app = document.createElement('div')
